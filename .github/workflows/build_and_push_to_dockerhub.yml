@@ -26,4 +26,4 @@ jobs:
             .
       - name: Push container
         run: |
-           docker push vabuhav/tf-rdbape --all-tags
+           docker push vabuhav/rdbape --all-tags
