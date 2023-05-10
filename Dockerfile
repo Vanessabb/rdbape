@@ -17,4 +17,6 @@ RUN Rscript -e "install.packages(c('R.utils', 'XML', 'ape', 'data.table'))"
 
 RUN Rscript -e "install.packages(c('dplyr', 'rentrez', 'tibble', 'tidyr'))"
 
+RUN Rscript -e "install.packages(c('devtools'))"
+
 CMD ["R"]
