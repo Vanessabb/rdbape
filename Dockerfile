@@ -28,4 +28,4 @@ RUN Rscript -e "BiocManager::install('GenomicRanges', version = '3.17', force = 
 
 RUN Rscript -e "BiocManager::install('BSgenome', version = '3.17', force = TRUE, update = FALSE)"
 
-CMD ["R", "--save"]
+CMD ["/bin/bash"]
