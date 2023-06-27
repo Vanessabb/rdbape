@@ -5,7 +5,8 @@ RUN apt-get update \
 		libhiredis-dev \
 		libssl-dev \
 		libsasl2-dev \
-    libxml2-dev \
+    		libxml2-dev \
+      		libfontconfig1-dev \
 		libcurl4-openssl-dev \
 	&& rm -rf /var/lib/apt/lists/*
 
