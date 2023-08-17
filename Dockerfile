@@ -28,6 +28,6 @@ RUN Rscript -e "BiocManager::install('GenomicRanges', version = '3.17', force = 
 
 RUN Rscript -e "BiocManager::install('BSgenome', version = '3.17', force = TRUE, update = FALSE)"
 
-RUN Rscript -e "BiocManager::install('universalmotif'), version = '3.17', force = TRUE, update = FALSE)"
+RUN Rscript -e "BiocManager::install('universalmotif', version = '3.17', force = TRUE, update = FALSE)"
 
 CMD ["/bin/bash"]
