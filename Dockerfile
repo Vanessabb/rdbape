@@ -18,7 +18,7 @@ RUN Rscript -e "install.packages(c('R.utils', 'XML', 'ape', 'data.table'))"
 
 RUN Rscript -e "install.packages(c('dplyr', 'rentrez', 'tibble', 'tidyr'))"
 
-RUN Rscript -e "install.packages(c('devtools'))"
+RUN Rscript -e "install.packages(c('devtools', 'base64enc'))"
 
 RUN Rscript -e "if (!require('BiocManager', quietly = TRUE)) install.packages('BiocManager'); BiocManager::install(version = '3.17')"
 
