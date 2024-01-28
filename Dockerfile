@@ -20,7 +20,7 @@ RUN Rscript -e "install.packages(c('dplyr', 'rentrez', 'tibble', 'tidyr'))"
 
 RUN Rscript -e "install.packages(c('devtools', 'base64enc'))"
 
-RUN Rscript -e "if (!require('BiocManager', quietly = TRUE)) install.packages('BiocManager'); BiocManager::install(version = '3.17')"
+RUN Rscript -e "if (!require('BiocManager', quietly = TRUE)) install.packages('BiocManager'); BiocManager::install(version = '3.17', ask = FALSE)"
 
 RUN Rscript -e "BiocManager::install('Biostrings', version = '3.17', force = TRUE, update = FALSE)"
 
