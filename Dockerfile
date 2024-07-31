@@ -30,6 +30,8 @@ RUN Rscript -e "BiocManager::install('BSgenome', version = '3.17', force = TRUE,
 
 RUN Rscript -e "BiocManager::install('universalmotif', version = '3.17', force = TRUE, update = FALSE)"
 
+RUN Rscript -e "BiocManager::install('pwalign', version = '3.17', force = TRUE, update = FALSE)"
+
 RUN Rscript -e "install.packages(c('inline', 'combinat'))"
 
 CMD ["/bin/bash"]
